@@ -1,6 +1,7 @@
 {
   "name": "mobile-device-programming",
   "version": "0.1.0",
+  "homepage": "http://ghadirs.github.io/mobile-device-programming/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
