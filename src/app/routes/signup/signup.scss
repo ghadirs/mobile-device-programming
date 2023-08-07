@@ -1,0 +1,99 @@
+.app-signup {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  width: calc(100% - 20px);
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  p {
+    margin-top: 8px;
+    font-size: 12px;
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #c0c0c0;
+    text-align: center;
+  }
+
+  form {
+    padding: 40px 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    > div {
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      margin-top: 32px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      label {
+        position: absolute;
+        top: -24px;
+        right: 0;
+        font-size: 14px;
+      }
+      input {
+        width: 300px;
+        margin: auto;
+        outline: 0;
+        border-radius: 10px;
+        border: 1px solid #c0c0c0;
+        height: 48px;
+        background: transparent;
+        font-size: 16px;
+        padding: 0 10px;
+      }
+
+      input::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    button {
+      border: none;
+      background: #0072fe;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 15px;
+      margin-top: 40px;
+      height: 48px;
+      width: 320px;
+      margin-right: auto;
+      margin-left: auto;
+
+      &.disabled {
+        opacity: 0.5;
+      }
+    }
+    > span {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 16px;
+      font-size: 16px;
+
+      a {
+        color: #0072fe;
+        text-decoration: none;
+      }
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
