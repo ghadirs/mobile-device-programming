@@ -29,6 +29,5 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
       - name: Upload coverage reports to Codecov
-  uses: codecov/codecov-action@v3
-  env:
-    CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Deploy React to GitHub Pages
+        uses: bitovi/github-actions-react-to-github-pages@v1.2.0
